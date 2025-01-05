@@ -1,0 +1,8 @@
+name: Output the info from Issue Raised
+on: issues
+jobs:
+    FindingInfoFromIssue:
+        runs-on: ubuntu-latest
+        steps:
+            - name: getting info when Issue Raised
+              run: echo "${{ toJson(github)}}"
